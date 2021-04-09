@@ -16,8 +16,8 @@ class ViewController: UIViewController {
     
     // Configure access token manually for testing, if desired! Create one manually in the console
     // at https://www.twilio.com/console/video/runtime/testing-tools
-    var accessToken = "TWILIO_ACCESS_TOKEN"
-
+    //var accessToken = "TWILIO_ACCESS_TOKEN"
+    var accessToken = "eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiIsImN0eSI6InR3aWxpby1mcGE7dj0xIn0.eyJqdGkiOiJTSzUxZDVkMWQ1ODVlYTNjZmQ5NTcyNTgxMjUyMjFhMGJkLTE2MTc5MTAzMTIiLCJpc3MiOiJTSzUxZDVkMWQ1ODVlYTNjZmQ5NTcyNTgxMjUyMjFhMGJkIiwic3ViIjoiQUNmM2IzMzY0ZDMyNTc2YzI3ODgyNjhjZjlmYjIxN2JiMyIsImV4cCI6MTYxNzkxMzkxMiwiZ3JhbnRzIjp7ImlkZW50aXR5IjoiUm9zcyIsInZpZGVvIjp7fX19.Ao2c6bai56uEDvjGR00uTe_GR3g3bBeP4M0L-Stl874"
     // Configure remote URL to fetch token from
     var tokenUrl = "http://localhost:8000/token.php"
     
@@ -162,6 +162,8 @@ class ViewController: UIViewController {
     }
 
     // MARK:- IBActions
+    
+    
     @IBAction func connect(sender: AnyObject) {
         performStartCallAction(uuid: UUID(), roomName: self.roomTextField.text)
         self.dismissKeyboard()
